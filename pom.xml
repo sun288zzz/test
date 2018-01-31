@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.yrys</groupId>
+	<artifactId>education</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
+
+	<name>education</name>
+	<description>Demo project for Spring Boot</description>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.4.0.RELEASE</version>
+		<relativePath />
+	</parent>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<java.version>1.8</java.version>
+		<poi.version>3.14</poi.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-aop</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-rest</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-httpclient</groupId>
+			<artifactId>commons-httpclient</artifactId>
+			<version>3.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		
+		<dependency>  
+            <groupId>net.sf.json-lib</groupId>
+		    <artifactId>json-lib</artifactId>
+		    <version>2.4</version>
+            <classifier>jdk15</classifier>
+        </dependency>  
+		
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		
+		<dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-activemq</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.activemq</groupId>
+            <artifactId>activemq-broker</artifactId>
+        </dependency>
+
+		<dependency>
+			<groupId>org.springframework.session</groupId>
+			<artifactId>spring-session</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-mongodb</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-redis</artifactId>
+		</dependency>
+
+		<!-- JSON -->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>1.2.7</version>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-collections</groupId>
+			<artifactId>commons-collections</artifactId>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>${poi.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>${poi.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml-schemas</artifactId>
+			<version>${poi.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-examples</artifactId>
+			<version>${poi.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-excelant</artifactId>
+			<version>${poi.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-scratchpad</artifactId>
+			<version>${poi.version}</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.github.virtuald/curvesapi -->
+		<dependency>
+			<groupId>com.github.virtuald</groupId>
+			<artifactId>curvesapi</artifactId>
+			<version>1.04</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.xmlbeans/xmlbeans -->
+		<dependency>
+			<groupId>org.apache.xmlbeans</groupId>
+			<artifactId>xmlbeans</artifactId>
+			<version>2.6.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>xom</groupId>
+			<artifactId>xom</artifactId>
+			<version>1.2.5</version>
+		</dependency>
+
+		<dependency>
+			<groupId>fr.opensagres.xdocreport</groupId>
+			<artifactId>fr.opensagres.xdocreport.converter.docx.xwpf</artifactId>
+			<version>1.0.6</version>
+		</dependency>
+		<dependency>
+			<groupId> fr.opensagres.xdocreport</groupId>
+			<artifactId> org.apache.poi.xwpf.converter.xhtml</artifactId>
+			<version> 1.0.6</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>19.0</version>
+		</dependency>
+		
+		<dependency>
+		  <groupId>com.artofsolving</groupId>
+		  <artifactId>jodconverter</artifactId>
+		  <version>2.2.1</version>
+		</dependency>
+		
+		<dependency>
+		  <groupId>com.github.livesense</groupId>
+		  <artifactId>jodconverter-core</artifactId>
+		  <version>1.0.5</version>
+		</dependency>
+
+		<!-- Logging <dependency> <groupId>ch.qos.logback</groupId> <artifactId>logback-classic</artifactId> 
+			</dependency> <dependency> <groupId>org.slf4j</groupId> <artifactId>jcl-over-slf4j</artifactId> 
+			</dependency> -->
+		<!-- https://mvnrepository.com/artifact/net.java.dev.jna/jna-platform -->
+		<!-- https://mvnrepository.com/artifact/net.java.dev.jna/jna -->
+		<!-- https://mvnrepository.com/artifact/org.freemarker/freemarker -->
+		<dependency>
+		   <groupId>org.freemarker</groupId>
+		   <artifactId>freemarker</artifactId>
+		   <version>2.3.25-incubating</version>
+		</dependency>
+<!-- 		定时插件 quartz -->
+		<dependency>
+		  <groupId>org.quartz-scheduler</groupId>
+		  <artifactId>quartz</artifactId>
+		  <version>2.2.1</version>
+		</dependency>
+		<dependency>
+		  <groupId>org.quartz-scheduler</groupId>
+		  <artifactId>quartz-jobs</artifactId>
+		  <version>2.2.1</version>
+		</dependency>
+<!-- 		openoffice插件 -->
+		<dependency>  
+            <groupId>com.artofsolving</groupId>  
+            <artifactId>jodconverter</artifactId>  
+            <version>2.2.1</version>  
+        </dependency>  
+        <dependency>  
+            <groupId>org.openoffice</groupId>  
+            <artifactId>jurt</artifactId>  
+            <version>3.0.1</version>  
+        </dependency>  
+        <dependency>  
+            <groupId>org.openoffice</groupId>  
+            <artifactId>ridl</artifactId>  
+            <version>3.0.1</version>  
+        </dependency>  
+        <dependency>  
+            <groupId>org.openoffice</groupId>  
+            <artifactId>juh</artifactId>  
+            <version>3.0.1</version>  
+        </dependency>  
+        <dependency>  
+            <groupId>org.openoffice</groupId>  
+            <artifactId>unoil</artifactId>  
+            <version>3.0.1</version>  
+        </dependency>  
+		
+         <dependency>
+	        <groupId>org.bytedeco</groupId>
+	        <artifactId>javacv</artifactId>
+	        <version>0.8</version>
+	    </dependency>
+        
+        <!--         rabbitmq -->
+		<dependency>
+		    <groupId>org.springframework.amqp</groupId>
+		    <artifactId>spring-rabbit</artifactId>
+		</dependency>
+		
+		<!-- PageOffice -->
+		<dependency>
+			<groupId>com.pageOffice</groupId>
+			<artifactId>sqlite-jdbc-3.7.2</artifactId>
+			<version>1.0</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.pageOffice</groupId>
+			<artifactId>pageoffice4</artifactId>
+			<version>1.0</version>
+		</dependency>
+        
+        <!-- <dependency>
+			<groupId>cn.sunars.sdk</groupId>
+			<artifactId>SunVoteDT</artifactId>
+			<type>dll</type>
+			<classifier>x64</classifier>
+			<version>1.0.0</version>
+			<scope>runtime</scope>
+		</dependency>  -->
+		
+		<!-- sunars
+		<dependency>
+	        <groupId>com.sunvote</groupId>  自定义
+	        <artifactId>sunvote</artifactId>    自定义
+	        <version>1.0</version> 自定义
+	        <scope>system</scope> system，类似provided，需要显式提供依赖的jar以后，Maven就不会在Repository中查找它
+	        <systemPath>E:/jiayi/SunVoteDT/SunVoteDT/SunVoteDT.jar</systemPath> 项目根目录下的lib文件夹下
+	    </dependency>  -->
+		
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
